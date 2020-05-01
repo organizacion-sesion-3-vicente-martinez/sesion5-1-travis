@@ -12,5 +12,5 @@ composer install
 ## Test
 
 ``` bash
-composer run-script test
+composer test
 ```

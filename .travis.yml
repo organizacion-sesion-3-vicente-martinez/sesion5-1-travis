@@ -3,5 +3,5 @@ php:
 - 7.4
 before_script:
   - composer install
-script: composer run-script test
+script: composer test
 
