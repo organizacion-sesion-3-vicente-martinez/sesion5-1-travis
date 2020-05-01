@@ -2,33 +2,33 @@
 use PHPUnit\Framework\TestCase;
 require 'Calculator.php';
 
-class CalculatorTests extends TestCase
+class CalculatorTest extends TestCase
 {
     private $calculator;
  
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->calculator = new Calculator();
     }
  
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->calculator = NULL;
     }
  
-    public function testAdd()
+    public function testAdd(): void
     {
         $result = $this->calculator->add(1, 2);
         $this->assertEquals(3, $result);
     }
 
-    public function testMultiply()
+    public function testMultiply(): void
     {
         $result = $this->calculator->multiply(5, 2);
         $this->assertEquals(10, $result);
     }
 
-    public function testDivision()
+    public function testDivision(): void
     {
         $result = $this->calculator->division(10, 2);
         $this->assertEquals(5, $result);
