@@ -16,5 +16,10 @@ class Calculator
     {
         return $a / $b;
     }
+
+    public function residue($a, $b): int
+    {
+        return $a % $b;
+    }
  
 }
