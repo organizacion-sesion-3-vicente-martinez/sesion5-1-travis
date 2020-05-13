@@ -34,10 +34,18 @@ class CalculatorTest extends TestCase
         $this->assertEquals(5, $result);
     }
 
-    public function testResidue(): void
+    public function testIsEven(): void
     {
-        $result = $this->calculator->residue(10, 3);
-        $this->assertEquals(1, $result);
+        $result = $this->calculator->iseven(10);
+        $this->assertEquals(true, $result);
+        $result = $this->calculator->iseven(8);
+        $this->assertEquals(true, $result);
+        $result = $this->calculator->iseven(5);
+        $this->assertEquals(false, $result);
+        $result = $this->calculator->iseven(21);
+        $this->assertEquals(false, $result);
+        $result = $this->calculator->iseven(100);
+        $this->assertEquals(true, $result);
     }
  
 }

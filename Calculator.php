@@ -17,9 +17,9 @@ class Calculator
         return $a / $b;
     }
 
-    public function residue($a, $b): int
+    public function iseven($a): bool
     {
-        return $a % $b;
+        return ($a % 2 ? false : true);
     }
  
 }
